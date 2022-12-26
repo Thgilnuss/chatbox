@@ -1,0 +1,146 @@
+#chat-container {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+  }
+  
+  #chat-header {
+    background-color: #eee;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  #chat-messages {
+    height: 400px;
+    overflow-y: scroll;
+    padding: 10px;
+  }
+  
+  .message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #eee;
+  }
+  
+  #chat-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+  }
+  
+  #chat-input form {
+    display: flex;
+    width: 100%;
+  }
+  
+  #chat-input input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #chat-input button {
+    padding: 10px;
+    border: none;
+    background-color: #0084ff;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  #chat-input button:hover {
+    background-color: #006fcc;
+  }
+  
+  /* Style the toggle button */
+  #toggle-dark-mode {
+    background-color: #0084ff;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px;
+    border: none;
+  }
+  
+  #toggle-dark-mode:hover {
+    background-color: #006fcc;
+  }
+  
+  /* Style the dark mode */
+  .dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .dark-mode #chat-header {
+    background-color: #444;
+  }
+  
+  .dark-mode .message {
+    background-color: #555;
+  }
+  
+  .dark-mode #chat-input input {
+    border-color: #666;
+  }
+  
+  .dark-mode #chat-input button {
+    background-color: #0084ff;
+    color: #fff;
+  }
+  
+  .dark-mode #chat-input button:hover {
+    background-color: #006fcc;
+  }
+  #nickname-form {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+  }
+  
+  #nickname-form label {
+    margin-right: 10px;
+  }
+  
+  #nickname-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #nickname-form button {
+    padding: 10px;
+    border: none;
+    background-color: #0084ff;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  #nickname-form button:hover {
+    background-color: #006fcc;
+  }
+
+  .notification {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #008420;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  body {
+    background-color: #ffffe0;
+  }
+  .message img {
+    max-width: 100%;
+  }
+  
+  
