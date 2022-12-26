@@ -84,3 +84,27 @@ nicknameForm.addEventListener('submit', (event) => {
       notification.remove();
     }, 3000);
   }
+  // Keep track of the online users
+const onlineUsers = new Set();
+
+// Update the online listings when a user connects or disconnects
+socket.on('user connect', (nickname) => {
+  onlineUsers.add(nickname);
+  updateOnlineListings();
+});
+
+socket.on('user disconnect', (nickname) => {
+  onlineUsers.delete(nickname);
+  updateOnlineListings();
+});
+
+function updateOnlineListings() {
+  // Clear the current online listings
+  onlineUsersElement.innerHTML = '';
+  // Add the online users to the online listings
+  for (const nickname of onlineUsers) {
+    const li = document.createElement('li');
+    li.textContent = nickname;
+    onlineUsersElement.appendChild(li);
+  }
+}
